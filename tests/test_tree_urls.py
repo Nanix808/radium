@@ -4,6 +4,8 @@ from unittest.mock import MagicMock
 
 import pytest
 from requests.exceptions import Timeout
+from requests.exceptions import RequestException
+from unittest.mock import AsyncMock
 
 from main import tree_urls
 
