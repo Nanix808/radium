@@ -1,0 +1,44 @@
+[
+  {
+    "name": "LICENSE",
+    "path": "LICENSE",
+    "sha": "b9c199c98f9bec183a195a9c0afc0a2e4fcc7654",
+    "last_commit_sha": "71799936dc4e92a22fe17344a012a2c20e79e682",
+    "type": "file",
+    "size": 823,
+    "encoding": null,
+    "content": null,
+    "target": null,
+    "url": "https://gitea.radium.group/api/v1/repos/radium/project-configuration/contents/LICENSE?ref=master",
+    "html_url": "https://gitea.radium.group/radium/project-configuration/src/branch/master/LICENSE",
+    "git_url": "https://gitea.radium.group/api/v1/repos/radium/project-configuration/git/blobs/b9c199c98f9bec183a195a9c0afc0a2e4fcc7654",
+    "download_url": "https://gitea.radium.group/radium/project-configuration/raw/branch/master/LICENSE",
+    "submodule_git_url": null,
+    "_links": {
+      "self": "https://gitea.radium.group/api/v1/repos/radium/project-configuration/contents/LICENSE?ref=master",
+      "git": "https://gitea.radium.group/api/v1/repos/radium/project-configuration/git/blobs/b9c199c98f9bec183a195a9c0afc0a2e4fcc7654",
+      "html": "https://gitea.radium.group/radium/project-configuration/src/branch/master/LICENSE"
+    }
+  },
+  {
+    "name": "README.md",
+    "path": "README.md",
+    "sha": "84220e02f05ca16fdae7f8dd37eca06899f53b25",
+    "last_commit_sha": "2d355869cb4fd82b062ebce4780f798eaab02acd",
+    "type": "file",
+    "size": 473,
+    "encoding": null,
+    "content": null,
+    "target": null,
+    "url": "https://gitea.radium.group/api/v1/repos/radium/project-configuration/contents/README.md?ref=master",
+    "html_url": "https://gitea.radium.group/radium/project-configuration/src/branch/master/README.md",
+    "git_url": "https://gitea.radium.group/api/v1/repos/radium/project-configuration/git/blobs/84220e02f05ca16fdae7f8dd37eca06899f53b25",
+    "download_url": "https://gitea.radium.group/radium/project-configuration/raw/branch/master/README.md",
+    "submodule_git_url": null,
+    "_links": {
+      "self": "https://gitea.radium.group/api/v1/repos/radium/project-configuration/contents/README.md?ref=master",
+      "git": "https://gitea.radium.group/api/v1/repos/radium/project-configuration/git/blobs/84220e02f05ca16fdae7f8dd37eca06899f53b25",
+      "html": "https://gitea.radium.group/radium/project-configuration/src/branch/master/README.md"
+    }
+  }
+]

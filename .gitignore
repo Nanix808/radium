@@ -1,2 +1,4 @@
 repo/
 __pycache__/
+.cache/
+setup.cfg

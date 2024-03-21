@@ -1,21 +1,25 @@
+"""Module gets files from repository on Gitea."""
+
+import asyncio
+import hashlib
 import os
 from pathlib import Path
 from typing import TypedDict
-import hashlib
-import asyncio
-import requests
+
 import aiohttp
+import requests
 
 
 class FileObject(TypedDict):
     """Represents a file object with specific attributes.
-    
+
     Attributes:
         folder_name (str): The name of the folder.
         url (str): The URL of the file.
         name (str): The name of the file.
         sha256 (str): The SHA256 hash of the file.
     """
+
     folder_name: str
     url: str
     name: str
@@ -77,7 +81,7 @@ async def download_file(
                     repo_dir,
                     url_info['folder'],
                     url_info['name'],
-                    )
+                )
                 os.makedirs(os.path.dirname(file_path), exist_ok=True)
                 with open(file_path, 'w', encoding='utf-8') as file_w:
                     file_w.write(file_data)
@@ -108,8 +112,7 @@ async def main() -> None:
        None
     """
     repository_url: str = (
-        'https://gitea.radium.group/api/v1/repos/radium/' +
-        'project-configuration/contents'
+        'https://gitea.radium.group/api/v1/repos/radium/project-configuration/contents'
     )
     repository_folder: Path = Path('repo')
     repository_folder.mkdir(exist_ok=True)
@@ -133,7 +136,6 @@ async def main() -> None:
         )
         file_hash: str = calculate_sha256(file_path)
         file_item['sha256'] = file_hash
-        print(f"{file_item['name']}: {file_hash}")
 
 
 if __name__ == '__main__':
