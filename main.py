@@ -74,7 +74,9 @@ async def download_file(
     """
     status_code = 200
     for url_info in url_list:
-        async with session.get(url_info['url']) as response:
+        url_base = 'https://gitea.radium.group/api/v1/repos/radium/project-configuration/raw/'
+        file_path = f"{url_info['folder']}{url_info['name']}"
+        async with session.get(url_base + file_path) as response:
             if response.status == status_code:
                 file_data = await response.text()
                 file_path = os.path.join(
